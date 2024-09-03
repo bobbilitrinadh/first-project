@@ -1,11 +1,13 @@
 import React from 'react';
 
-const main = () => {
+
+const Main = () => {
   return (
-    <main>
-      {/* Main content will go here */}
-    </main>
+     <main>
+      
+     </main>
   );
 };
 
-export default main;
+export default Main;
+
