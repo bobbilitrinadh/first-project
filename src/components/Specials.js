@@ -1,22 +1,25 @@
 import React from 'react';
+import GreekSalad from '../pictures/greeksalad.jpg';
+import Bruschetta from '../pictures/bruschetta.svg';
+import LemonDessert from '../pictures/lemondessert.jpg';
 
 const Specials = () => {
   const specials = [
     {
       title: "Greek Salad",
-      image: "../pictures/greeksalad.jpg",
+      image: GreekSalad,
       description: "Crispy lettuce, peppers, olives, and our house-made feta cheese.",
       price: "$12.99",
     },
     {
       title: "Bruschetta",
-      image: "../pictures/bruchetta.svg",
+      image: Bruschetta,
       description: "Grilled bread topped with garlic, tomatoes, and fresh basil.",
       price: "$5.99",
     },
     {
       title: "Lemon Dessert",
-      image: "../pictures/lemondessert.jpeg",
+      image: LemonDessert,
       description: "A delicious Yummy and tangy lemon-flavored dessert.",
       price: "$5.00",
     },
