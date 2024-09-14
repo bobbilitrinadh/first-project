@@ -501,66 +501,57 @@ input[type="password"] {
   }
 }
 
-/*Menu Section*/
+  /*Menu Section*/
 .menu-section {
     padding: 50px 0;
     text-align: center;
     background-color: #f7f7f7;
-  }
-  
-  .menu-grid {
+}
+.menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin: 20px auto;
     max-width: 1200px;
-  }
-  
-  .menu-card {
+}
+.menu-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-  }
-  
-  .menu-card:hover {
+}
+.menu-card:hover {
     transform: translateY(-10px);
-  }
-  
-  .menu-image {
+}
+.menu-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-  }
-  
-  .menu-info {
+}
+.menu-info {
     padding: 20px;
-  }
-  
-  .menu-info h3 {
+}
+.menu-info h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-  }
-  
-  .menu-info p {
+}
+.menu-info p {
     font-size: 1rem;
     color: #666;
-  }
-  
-  .menu-footer {
+}
+.menu-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-  }
-  
-  .menu-price {
+}
+.menu-price {
     font-size: 1.2rem;
     font-weight: bold;
     color: #495e57;
-  }
-  
+}
+
 
 
 
