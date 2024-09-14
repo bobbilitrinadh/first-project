@@ -2,6 +2,7 @@ import React from 'react';
 import GreekSalad from '../pictures/greeksalad.jpg';
 import Bruschetta from '../pictures/bruschetta.svg';
 import LemonDessert from '../pictures/lemondessert.jpg';
+import { Link } from 'react-router-dom';
 
 const Specials = () => {
   const specials = [
@@ -29,7 +30,9 @@ const Specials = () => {
     <section className="specials-section">
       <div className="specials-header">
         <h2>This Week's Specials!</h2>
+        <Link to="/menu">
         <button className="order-button">Online Menu</button>
+        </Link>
       </div>
       <div className="specials-grid">
         {specials.map((item, index) => (
