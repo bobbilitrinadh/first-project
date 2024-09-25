@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
 import logo from "../pictures/restauranfood.jpg";
 
+
+
 const Hero = () => {
   const navigate = useNavigate(); // Initialize useNavigate hook
 
@@ -17,7 +19,9 @@ const Hero = () => {
           <p>
             We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
           </p>
+          
           <button className="reserve-button" onClick={handleReserveClick}>Reserve a Table</button>
+          
         </div>
         <div className="hero-image">
           <img src={logo} alt="Delicious food" />
