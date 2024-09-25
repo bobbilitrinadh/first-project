@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 const BookingForm = () => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
-  const [guests, setGuests] = useState(2);
+  const [guests, setGuests] = useState('');
   const [occasion, setOccasion] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false); // State to track form submission
 
-  const [availableTimes] = useState(['17:00', '18:00', '19:00', '20:00', '21:00']);
-
+  
   const handleDateChange = (e) => setDate(e.target.value);
   const handleTimeChange = (e) => setTime(e.target.value);
   const handleGuestsChange = (e) => setGuests(e.target.value);
@@ -28,23 +27,29 @@ const BookingForm = () => {
 
         <label htmlFor="res-time">Choose time:</label>
         <select id="res-time" value={time} onChange={handleTimeChange} required>
-          {availableTimes.map((timeOption, index) => (
-            <option key={index} value={timeOption}>
-              {timeOption}
-            </option>
-          ))}
+          <option value="5:00">5:00 PM</option>
+          <option value="6:00">6:00 PM</option>
+          <option value="7:00">7:00 PM</option>
+          <option value="8:00">8:00 PM</option>
+          <option value="9:00">9:00 PM</option>
+          <option value="10:00">10:00 PM</option>
         </select>
 
         <label htmlFor="guests">Number of guests:</label>
-        <input
-          type="number"
-          id="guests"
-          min="2"
-          max="10"
-          value={guests}
-          onChange={handleGuestsChange}
-          required
-        />
+        <select id="guests" value={guests} onChange={handleGuestsChange} required>
+         
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          
+        </select>
 
         <label htmlFor="occasion">Occasion:</label>
         <select id="occasion" value={occasion} onChange={handleOccasionChange} required>
